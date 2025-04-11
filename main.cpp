@@ -6,6 +6,7 @@ int main() {
     int dist[30][30];
     for (int i = 0; i < 30; ++i) {
         fill(dist[i], dist[i] + 26, 100000);
+        dist[i][i] = 0;
     }
     int m;
     cin >> m;
